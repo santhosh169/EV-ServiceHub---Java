@@ -36,7 +36,7 @@ public class EVServiceHub  {
                 System.out.println("Press 1 for Stations");
                 System.out.println("Press 2 for HelpLine");
                 System.out.println("Press 3 for Reservation");
-
+                System.out.println();
                 // User choice for services
                 int choice = sc.nextInt();
                 sc.nextLine(); // Consume the newline character
@@ -101,7 +101,7 @@ public class EVServiceHub  {
         availableStations.put("45", "eDrive Charging Station");
         availableStations.put("43", "Zeon Ooty Point");
         availableStations.put("93", "Tata Power Salem Charger");
-
+        System.out.println();
         System.out.println("AVAILABLE STATIONS ARE-------");
         for (Map.Entry<String, String> station : availableStations.entrySet()) {
             System.out.println("Station Code: " + station.getKey() + ", Station Name: " + station.getValue());
@@ -110,7 +110,7 @@ public class EVServiceHub  {
         // User input for reservation
         System.out.println("Enter the Station code to Reservation :");
         String code = sc.nextLine();
-
+        System.out.println();
         System.out.println("Enter the Time :");
         String time = sc.nextLine();
 
